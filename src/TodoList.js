@@ -1,14 +1,20 @@
 import React from 'react'
 import Todo from './Todo'
 
-function TodoList({addtodo}) {
+function TodoList({addtodo,setaddtodo}) {
     
     return (
         <div className="todo-list">
             <div>
                 <ul> 
                     {addtodo.map(todo=>(
-                        <Todo text={todo.text} key={todo.key} />
+                        <Todo 
+                            setaddtodo={setaddtodo} 
+                            addtodo={addtodo} 
+                            text={todo.text} 
+                            key={todo.key} 
+                            todo={todo}
+                        />
                     ))}
                 </ul>
             </div>

@@ -1,16 +1,45 @@
 .main-div{
     width: auto;
-    height: 1000px;
+    height: 2000px;
     color:white;
     background-image:linear-gradient(#FFAFBD, #ffc3a0) ;
     justify-content: center;
     text-align: center;
 }
 
+.logo{
+    height: 45px;
+    background-color: white;
+    color: #FFAFBD;
+    text-align: left;
+    font-size: 15px;
+}
+
+.logo-text{
+   background-color: linear-gradient(#FFAFBD, #ffc3a0) ;
+   margin-top: 10px;
+   margin-bottom: 7px;
+   padding-left: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.titletodo{
+    padding-bottom: 50px;
+}
+
+.inputText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 .inputbtn{
     background-color: white;
     border: none;
-    display: inline-block;
+    color: #FFAFBD;
+    height: 50px;
+    width: 80px;
 }
 
 .titletodo{
@@ -20,12 +49,17 @@
 }
 
 .todoinput{
-    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px 0px 0px 5px;
     background-image:linear-gradient(#FFAFBD, #ffc3a0) ;
     border: 2px solid white;
     margin-bottom: 20px;
+    padding: 5px 10px;
     color: white;
     font-weight: 1000;
+    font-size: 30px;
 }
 
 .todo-list{
@@ -33,10 +67,11 @@
 }
 
 .todo-container{
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 5px;
     
 }
 
@@ -45,4 +80,26 @@
     color: white;
     border: 2px solid white;
     width:200px;
+    padding: 5px 10px;
+    padding-bottom: 5px;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.btn{
+    background-color: white;
+    border-left: 0px solid #FFAFBD;
+    border-radius: 0px;
+    color: #FFAFBD;
+    height: 42px;
+    width: 60px;
+    margin-top: 19px;
+}
+
+btn :hover{
+    background-color: #FFAFBD;
+    color: white;
 }

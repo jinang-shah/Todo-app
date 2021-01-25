@@ -13,20 +13,28 @@ function App() {
   };
 
    const onClickHandler=(e)=>{
-     e.preventDefault()
-     setaddtodo([...addtodo,{text:inputtext , completed:false, key:Math.random()*100}])
-     setinput('');
+    if(inputtext !== '' ){
+      e.preventDefault()
+      setaddtodo([...addtodo,{text:inputtext , completed:false, key:Math.random()*100}])
+      setinput('');
+    }
+    else{
+      alert('Add item to list')
+    }
    };
 
   return (
     <div className="main-div">
-          <h1 className="titletodo">Todo App</h1>
+      <div className="logo">
+         <h1 className="logo-text"> Jinang Shah</h1>
+      </div>
+          <h1 className="titletodo">ToDo App</h1>
           <div className="inputText">
-             <input type="text" value={inputtext} className="todoinput" onChange={inputChangeHandler}  />
-             <button type="submit" className="btn btn-default" onClick={onClickHandler}  > Add</button>
+             <input  type="text" value={inputtext} className="todoinput" onChange={inputChangeHandler}  />
+             <button type="submit" className="inputbtn" onClick={onClickHandler}  > Add</button>
           </div>
           <div>
-            <TodoList addtodo={addtodo} />
+            <TodoList setaddtodo={setaddtodo} addtodo={addtodo} />
           </div>
     </div>
   );
