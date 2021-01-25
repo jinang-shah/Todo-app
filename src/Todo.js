@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 
 const Todo=({addtodo,setaddtodo,todo,text,key}) =>{
@@ -28,4 +29,18 @@ const Todo=({addtodo,setaddtodo,todo,text,key}) =>{
     )
 }
 
+=======
+import React from 'react'
+
+const Todo=({text,key}) =>{
+    return(
+        <div className="todo-container">
+            <h3 className="todoText" id="key">{text}</h3>
+            <button className="fa fa-close"></button>
+            <button className="fa fa-trash"></button>
+        </div>  
+    )
+}
+
+>>>>>>> ce17e28a5eebfaacb06a4845adad7e91aa057fb8
 export default Todo

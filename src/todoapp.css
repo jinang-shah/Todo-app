@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .main-div{
     width: auto;
     height: 2000px;
@@ -103,3 +104,53 @@ btn :hover{
     background-color: #FFAFBD;
     color: white;
 }
+=======
+.main-div{
+    width: auto;
+    height: 1000px;
+    color:white;
+    background-image:linear-gradient(#FFAFBD, #ffc3a0) ;
+    justify-content: center;
+    text-align: center;
+}
+
+.inputbtn{
+    background-color: white;
+    border: none;
+    display: inline-block;
+}
+
+.titletodo{
+    font-size: 60px;
+    margin-top: 0px;
+    padding-top: 40px;
+}
+
+.todoinput{
+    border-radius: 5px;
+    background-image:linear-gradient(#FFAFBD, #ffc3a0) ;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 1000;
+}
+
+.todo-list{
+    justify-content: center;
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+    
+}
+
+.todoText{
+    background-color:linear-gradient(#FFAFBD, #ffc3a0);
+    color: white;
+    border: 2px solid white;
+    width:200px;
+}
+>>>>>>> ce17e28a5eebfaacb06a4845adad7e91aa057fb8
